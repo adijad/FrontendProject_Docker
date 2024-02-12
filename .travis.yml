@@ -6,9 +6,9 @@ services:
 
 
 before_install:
-  - docker build -t adityajad0610/FrontendProject_Docker -f Dockerfile.dev . 
+  - docker build -t adityajad0610/frontendproject_docker -f Dockerfile.dev . 
 
 
 script:
-  - docker run -e CI=true adityajad0610/FrontendProject_Docker npm run test
+  - docker run -e CI=true adityajad0610/frontendproject_docker npm run test
   
